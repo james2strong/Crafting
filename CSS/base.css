@@ -101,8 +101,6 @@ img {
 .feat-img {
 	border-radius: 5px;
 }
-
-
 img[src*="Minis"] {
 	margin: 4px;
 	border: solid 2px;
