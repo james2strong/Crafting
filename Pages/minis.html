@@ -4,10 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Your World</title>
+    <link rel="javascript" href="../java/script.js">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/normalized.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/flexbox.css">
+    
 </head>
 
 <body>
@@ -20,15 +22,14 @@
 			<li><a href="wood.html">Wood</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
-	</header><!--/.main-header-->  
+	</header> 
 
     <div class="banner">
 		<img class="logo" src="../images/Foam/LargeTower.jpeg" alt="Castle Tower">
 		<h1 class="headline">Build Your World</h1>
 		<span class="tagline">The most fun you can have with glue and paint.</span>
-	</div><!--/.banner-->
-
-    <!--/pictures--> 
+	</div>
+ 
     <div class="row">
         <div class="primary col">
             <h2>Miniatures</h2>
@@ -36,7 +37,7 @@
             models with brushes and acrilic paint.  Although I am still a novice skill level, I thoroughly 
             enjoy the time I spend painting each one.  It is very easy to get lost in the details of the work
             and spend several hours on each paint job.</p>
-            <img src="../Images/Minis/BarbarianFront.jpeg" alt="Barbarian Mini Front">
+            <img src="../Images/Minis/BarbarianFront.jpeg" onmouseover="enlargeImg()" onmouseout="resetImg()" id="thumb" alt="Barbarian Mini Front">
             <img src="../Images/Minis/BarbarianBack.jpeg" alt="Barbarian Mini Back">
             <img src="../Images/Minis/CowboyFront.jpeg" alt="Cowboy Mini Front">
             <img src="../Images/Minis/CowboyBack.jpeg" alt="Cowboy Mini Back">
@@ -58,7 +59,25 @@
         </div>
 </div>
 
-        
+<script>  
+    img = document.getElementById("thumb");
+    function enlargeImg() { 
+      img.style.transform = "scale(1.5)";  
+      img.style.transition = "transform 0.25s ease"; 
+    } 
+
+    function resetImg() {  
+      img.style.transform = "scale(1)"; 
+      img.style.transition = "transform 0.25s ease"; 
+    } 
+</script> 
+
+<footer class="main-footer">
+    <div class="footer-inner">
+        <span>Thank you for visiting.</span>
+    </div>
+</footer>
+    
 </body>
 
 
