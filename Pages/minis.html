@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Your World</title>
-    <link rel="javascript" href="../java/script.js">
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/normalized.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/flexbox.css">
-    
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Build Your World</title>
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/normalized.css">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/flexbox.css">
+        <script src="../java/script.js"></script>
+        
+    </head>
 
-<body>
+    <body>
 
-    <header class="main-header">
-		<h1 class="name"><a href="#">Build Projects</a></h1>
-		<ul class="main-nav">
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="foam.html">Foam</a></li>
-			<li><a href="wood.html">Wood</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</header> 
+        <header class="main-header">
+            <h1 class="name"><a href="#">Build Projects</a></h1>
+            <ul class="main-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="foam.html">Foam</a></li>
+                <li><a href="wood.html">Wood</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header> 
 
-    <div class="banner">
-		<img class="logo" src="../images/Foam/LargeTower.jpeg" alt="Castle Tower">
-		<h1 class="headline">Build Your World</h1>
-		<span class="tagline">The most fun you can have with glue and paint.</span>
-	</div>
- 
-    <div class="row">
-        <div class="primary col">
-            <h2>Miniatures</h2>
-            <p>The models shown are 28mm to 50mm in height.  I painted each of these miniature 
-            models with brushes and acrilic paint.  Although I am still a novice skill level, I thoroughly 
-            enjoy the time I spend painting each one.  It is very easy to get lost in the details of the work
-            and spend several hours on each paint job.</p>
-            <img src="../Images/Minis/BarbarianFront.jpeg" onmouseover="enlargeImg()" onmouseout="resetImg()" id="thumb" alt="Barbarian Mini Front">
-            <img src="../Images/Minis/BarbarianBack.jpeg" alt="Barbarian Mini Back">
-            <img src="../Images/Minis/CowboyFront.jpeg" alt="Cowboy Mini Front">
-            <img src="../Images/Minis/CowboyBack.jpeg" alt="Cowboy Mini Back">
-            <img src="../Images/Minis/Cyclops1.jpeg" alt="Cyclops Mini">    
-            <img src="../Images/Minis/Cyclops2.jpeg" alt="Cyclops Mini">    
-            <img src="../Images/Minis/FireGiant.jpeg" alt="FireGiant Mini">
-            <img src="../Images/Minis/PurpSkelFront.jpeg" alt="Skeleton Mini in Purple">
-            <img src="../Images/Minis/PurpSkelBack.jpeg" alt="Skeleton Mini in Purple from Back">
-            <img src="../Images/Minis/GreenSkelBack.jpeg" alt="Skeleton Mini in Green from Back">
-            <img src="../Images/Minis/RedSkelBack.jpeg" alt="Skeleton Mini in Red from Back">
-            <img src="../Images/Minis/MinotaurFront.jpeg" alt="Minotaur Mini">
-            <img src="../Images/Minis/MinotaurBack.jpeg" alt="Minotaur Mini from Back">
-            <img src="../Images/Minis/SpiderFront.jpeg" alt="Spider Mini">
-            <img src="../Images/Minis/SpiderBack.jpeg" alt="Spider Mini from Back">
-            <img src="../Images/Minis/KnightFront.jpeg" alt="Knight Mini">    
-            <img src="../Images/Minis/KnightBack.jpeg" alt="Knight Mini from Back">    
-            <img src="../Images/Minis/OrcFront.jpeg" alt="Orc Mini">
-            <img src="../Images/Minis/OrcBack.jpeg" alt="Orc Mini from Back">
+        <div class="banner">
+            <img class="logo" src="../images/Foam/LargeTower.jpeg" alt="Castle Tower">
+            <h1 class="headline">Build Your World</h1>
+            <span class="tagline">The most fun you can have with glue and paint.</span>
         </div>
-</div>
-
-<script>  
-    img = document.getElementById("thumb");
-    function enlargeImg() { 
-      img.style.transform = "scale(1.5)";  
-      img.style.transition = "transform 0.25s ease"; 
-    } 
-
-    function resetImg() {  
-      img.style.transform = "scale(1)"; 
-      img.style.transition = "transform 0.25s ease"; 
-    } 
-</script> 
-
-<footer class="main-footer">
-    <div class="footer-inner">
-        <span>Thank you for visiting.</span>
-    </div>
-</footer>
     
-</body>
+        <div class="row">
+            <div class="primary col">
+                <h2>Miniatures</h2>
+                <p>The models shown are 28mm to 50mm in height.  I painted each of these miniature 
+                models with brushes and acrilic paint.  Although I am still a novice skill level, I thoroughly 
+                enjoy the time I spend painting each one.  It is very easy to get lost in the details of the work
+                and spend several hours on each paint job.</p>
+                <img src="../Images/Minis/BarbarianFront.jpeg" onmouseover="imageflip()" id="Barbarian" alt="Barbarian Mini Front">
+               <!-- <img src="../Images/Minis/BarbarianBack.jpeg" alt="Barbarian Mini Back"> -->
+                <img src="../Images/Minis/CowboyFront.jpeg" onmouseover="imageflip1()" id="Cowboy" alt="Cowboy Mini Front">
+               <!-- <img src="../Images/Minis/CowboyBack.jpeg" alt="Cowboy Mini Back"> -->
+                <img src="../Images/Minis/Cyclops1.jpeg" alt="Cyclops Mini">    
+                <img src="../Images/Minis/Cyclops2.jpeg" alt="Cyclops Mini">    
+                <img src="../Images/Minis/FireGiant.jpeg" alt="FireGiant Mini">
+                <img src="../Images/Minis/PurpSkelFront.jpeg" onmouseover="imageflip2()" id="Skeleton" alt="Skeleton Mini in Purple">
+               <!-- <img src="../Images/Minis/PurpSkelBack.jpeg" alt="Skeleton Mini in Purple from Back">-->
+                <img src="../Images/Minis/GreenSkelBack.jpeg" alt="Skeleton Mini in Green from Back">
+                <img src="../Images/Minis/RedSkelBack.jpeg" alt="Skeleton Mini in Red from Back">
+                <img src="../Images/Minis/MinotaurFront.jpeg" onmouseover="imageflip3()" id="Minotaur" alt="Minotaur Mini">
+               <!-- <img src="../Images/Minis/MinotaurBack.jpeg" alt="Minotaur Mini from Back">-->
+                <img src="../Images/Minis/SpiderFront.jpeg" onmouseover="imageflip4()" id="Spider" alt="Spider Mini">
+               <!-- <img src="../Images/Minis/SpiderBack.jpeg" alt="Spider Mini from Back">-->
+                <img src="../Images/Minis/KnightFront.jpeg" onmouseover="imageflip5()" id="Knight" alt="Knight Mini">    
+               <!-- <img src="../Images/Minis/KnightBack.jpeg" alt="Knight Mini from Back"> -->   
+                <img src="../Images/Minis/OrcFront.jpeg" onmouseover="imageflip6()" id="Orc" alt="Orc Mini">
+               <!-- <img src="../Images/Minis/OrcBack.jpeg" alt="Orc Mini from Back"> -->
+            </div>
+        </div>
+
+        <!--<script>  
+            img = document.getElementById("thumb");
+            function enlargeImg() { 
+            img.style.transform = "scale(1.5)";  
+            img.style.transition = "transform 0.25s ease"; 
+            } 
+
+            function resetImg() {  
+            img.style.transform = "scale(1)"; 
+            img.style.transition = "transform 0.25s ease"; 
+            } 
+
+            onmouseover="enlargeImg()" onmouseout="resetImg()" id="thumb"
+        </script> -->
+        
+        
+
+        <footer class="main-footer">
+            <div class="footer-inner">
+                <span>Thank you for visiting.</span>
+            </div>
+        </footer>
+        
+    </body>
 
 
 </html>
