@@ -95,6 +95,13 @@ img[src*="Minis"] {
 	height: 180px;
 }
 
+img[src*="Foam"] {	
+	margin: 4px;
+	border: solid 2px;
+	width: 25rem;
+	height: 25rem;
+}
+
 
 /* ================================= 
   Media Queries
