@@ -89,6 +89,14 @@ img {
 	border-radius: 5px;
 }
 
+.builds {
+	padding: 1em 2em;
+}
+
+.models {
+	padding-left: 2em;
+}
+
 img[src*="Minis"] {
 	margin: 4px;
 	border: solid 2px;
@@ -99,8 +107,8 @@ img[src*="Minis"] {
 img[src*="Foam"] {	
 	margin: 4px;
 	border: solid 2px;
-	width: 25rem;
-	height: 25rem;
+	width: 25em;
+	height: 25em;
 }
   
  /* ================================= 
