@@ -2,33 +2,40 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
 	margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 p {
 	font-size: .95em;
 }
+
 h2,
 h3,
 a {
 	color: #093a58;
 }
+
 h1,
 h2,
 h3 {
 	margin-top: 0;
 }
+
 a {
 	text-decoration: none;
 }
+
 img {
 	max-width: 100%;
 }
@@ -37,20 +44,24 @@ img {
 	font-size: 1.35em;
 	margin: 0;
 }
+
 .main-nav {
 	margin-top: 5px;
 }
+
 .name a,
 .main-nav a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
 }
+
 .main-nav a {
 	font-size: .95em;
 	color: rgb(235, 20, 20);
 	text-transform: uppercase;
 }
+
 .main-nav a:hover {
 	color: #000000;
 }
@@ -59,20 +70,24 @@ img {
 	padding-top: .35em;
 	padding-bottom: .35em;
 }
+
 .banner,
 .main-footer {
 	text-align: center;
 }
+
 .banner {
 	color: #fff;
 	background: rgba(230, 47, 47, 0.904);
 	padding: 1em 0;
 	margin-bottom: 24px;
 }
+
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
 }
+
 .main-footer {
 	background: #69abcf;
 	padding: 2em 0;
@@ -82,9 +97,11 @@ img {
 .logo {
 	width: 132px;
 }
+
 .headline {
 	margin-bottom: 0;
 }
+
 .feat-img {
 	border-radius: 5px;
 }
@@ -109,21 +126,4 @@ img[src*="Foam"] {
 	border: solid 2px;
 	width: 25em;
 	height: 25em;
-}
-  
- /* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-	.main-header,
-	.row,
-  .footer-inner{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	.tagline {
-		font-size: 1.4em;
-	}
 }

@@ -9,10 +9,24 @@
 	.main-nav {
 		display: flex;
 	}
+
 	.main-header {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.main-header,
+	.row,
+	.footer-inner{
+			width: 80%;
+			margin: 0 auto;
+			max-width: 1150px;
+		}
+		
+	.tagline {
+			font-size: 1.4em;
+		}
+	
 	
 }
 
